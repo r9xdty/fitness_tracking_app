@@ -1,4 +1,4 @@
-# \\ Personal Fitness Tracker //
+# \\\ Personal Fitness Tracker //
 ### Activity Recognition & Personalized Health Insights via Machine Learning
 
 > **MathWorks Hackathon 2026** — Team: Erkan Polat · Samet Erhan Sarı · Mustafa Altuntaş
