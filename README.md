@@ -219,12 +219,55 @@ BMR via Mifflin-St Jeor: `88.36 + (13.4 × kg) + (4.8 × cm) − (5.7 × age)`
 
 ```
 fitness_tracking_app/
-├── Fitness Tracker/
-│   ├── fitness_logger.m       # Data recording (improved third.m)
-│   ├── fitness_process.m      # Signal processing + feature extraction
-│   └── timeElapsed.m          # Datetime utility
-├── Fitness_Tracker_Presentation.pdf
-└── README.md
+├── Main.mlx
+├── +core/
+│   ├── Persona.m
+│   ├── buildAllPersonas.m
+│   └── sessionFilesFor.m
+├── +util/
+│   ├── loadSession.m
+│   ├── verifySession.m
+│   ├── inspectMat.m
+│   ├── timeElapsed.m
+│   ├── listSessions.m
+│   └── removeGravity.m
+├── +metrics/
+│   ├── countSteps.m
+│   ├── countStepsGPS.m
+│   ├── computeDistance.m
+│   ├── computeCadence.m
+│   ├── computeFloors.m
+│   ├── computeCalories.m
+│   └── computeIntensity.m
+├── +analysis/
+│   ├── aggregatePersona.m
+│   ├── healthInsights.m
+│   └── compareAll.m
+├── +ml/
+│   ├── extractWindowFeatures.m
+│   ├── buildTrainTable.m
+│   ├── trainAndExport.m
+│   └── classifyLive.m
+├── +viz/
+│   ├── plotSession.m
+│   ├── plotPersonaDashboard.m
+│   ├── plotComparison.m
+│   └── plotActivityPie.m
+├── data/
+│   ├── sitting_01.mat
+│   ├── walking_01.mat
+│   ├── running_01.mat
+│   ├── stairs_01.mat
+│   ├── sitting_02.mat
+│   ├── walking_02.mat
+│   ├── running_02.mat
+│   ├── stairs_02.mat
+│   ├── sitting_03.mat
+│   ├── walking_03.mat
+│   ├── running_03.mat
+│   └── stairs_03.mat
+├── live_demo/
+└── Fitness_Tracker_Presentation.pdf
 ```
 
 ---
